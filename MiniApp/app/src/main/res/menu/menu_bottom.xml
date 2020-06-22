@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_topic_list"
+        android:title="topics"
+        android:icon="@drawable/ic_format_list_bulleted"/>
+
+    <item
+        android:id="@+id/menu_setting"
+        android:title="setting"
+        android:icon="@drawable/ic_settings"/>
+
+</menu>
