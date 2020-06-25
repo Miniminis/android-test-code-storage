@@ -35,9 +35,6 @@
         <action
             android:id="@+id/action_mainFragment_to_securityFragment"
             app:destination="@id/securityFragment" />
-        <action
-            android:id="@+id/action_mainFragment_to_viewPager2Activity"
-            app:destination="@id/viewPager2Activity" />
     </fragment>
     <fragment
         android:id="@+id/unitTestFragment"
@@ -61,7 +58,11 @@
         android:id="@+id/aboutMeFragment"
         android:name="com.example.androidtestproject.layout.ConstraintLayoutFragment"
         android:label="레이아웃"
-        tools:layout="@layout/fragment_constraint_layout" />
+        tools:layout="@layout/fragment_constraint_layout" >
+        <action
+            android:id="@+id/action_aboutMeFragment_to_toggleButtonGroup"
+            app:destination="@id/toggleButtonGroup" />
+    </fragment>
     <fragment
         android:id="@+id/settingFragment"
         android:name="com.example.androidtestproject.setting.SettingFragment"
@@ -154,4 +155,9 @@
         android:name="com.example.androidtestproject.viewpager.ViewPager2Activity"
         android:label="activity_view_pager2"
         tools:layout="@layout/activity_view_pager2" />
+    <fragment
+        android:id="@+id/toggleButtonGroup"
+        android:name="com.example.androidtestproject.layout.ToggleButtonGroup"
+        android:label="fragment_toggle_button_group"
+        tools:layout="@layout/fragment_toggle_button_group" />
 </navigation>

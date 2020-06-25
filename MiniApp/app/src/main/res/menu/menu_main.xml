@@ -3,38 +3,38 @@
 
     <item
         android:id="@+id/menu_unittest"
-        android:title="유닛 테스트"/>
+        android:title="UnitTest"/>
 
     <item
         android:id="@+id/menu_dice_roller"
-        android:title="주사위"/>
+        android:title="DiceRoller"/>
 
     <item
         android:id="@+id/menu_layout"
-        android:title="레이아웃"/>
+        android:title="Layout"/>
 
     <item
         android:id="@+id/menu_navigation"
-        android:title="네비게이션 : Trivia App"/>
+        android:title="Navigation"/>
 
     <item
         android:id="@+id/menu_webview"
-        android:title="웹뷰"/>
+        android:title="WebView"/>
 
     <item
         android:id="@+id/menu_share"
-        android:title="데이터 공유"/>
+        android:title="DataShare"/>
 
     <item
         android:id="@+id/menu_lifecycle"
-        android:title="생명주기 : activity and fragment"/>
+        android:title="LifeCycle"/>
 
     <item
         android:id="@+id/menu_encryption"
-        android:title="암호화/복호화"/>
+        android:title="Encryption"/>
 
     <item
         android:id="@+id/menu_viewPager"
-        android:title="뷰 페이저"/>
+        android:title="ViewPager"/>
 
 </menu>

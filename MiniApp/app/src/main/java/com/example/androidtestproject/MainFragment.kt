@@ -79,8 +79,8 @@ class MainFragment : Fragment() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.menu_viewPager -> {
-                this.findNavController().navigate(R.id.action_mainFragment_to_viewPager2Activity)
-                (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
+//                this.findNavController().navigate(R.id.action_mainFragment_to_viewPager2Activity)
+//                (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
                 return@OnNavigationItemSelectedListener true
             }
             else -> { false }
