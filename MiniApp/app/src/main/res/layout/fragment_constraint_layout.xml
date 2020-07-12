@@ -136,7 +136,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
         android:background="#FFEB3B"
-        android:text="TextView"
+        android:text="Move to SeekBar Fragment"
         android:textSize="18sp"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintStart_toStartOf="parent"
@@ -152,7 +152,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:background="#3F51B5"
-        android:text="PageToggleButtonGroup"
+        android:text="Move to ToggleButtonGroup Fragment"
         android:textSize="24sp"
         app:layout_constraintDimensionRatio=""
         app:layout_constraintEnd_toEndOf="parent"
@@ -259,4 +259,5 @@
         android:text="Button"
         app:layout_constraintBaseline_toBaselineOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -38,10 +38,7 @@ class ConstraintLayoutFragment : Fragment() {
 
     private val mOnClickListener = View.OnClickListener {
         when(it.id) {
-            R.id.textView12 -> {
-                it.setBackgroundColor(Color.BLACK)
-                this.findNavController().navigate(R.id.action_aboutMeFragment_to_toggleButtonGroup)
-            }
+            R.id.textView12 -> it.setBackgroundColor(Color.BLACK)
             R.id.textView13 -> it.setBackgroundResource(R.color.colorAccent)
             R.id.textView14 -> it.setBackgroundColor(Color.MAGENTA)
             R.id.textView16 -> it.setBackgroundResource(R.color.colorPrimaryDark)

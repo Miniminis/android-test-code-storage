@@ -18,8 +18,8 @@
             android:id="@+id/action_mainFragment_to_diceRollerFragment"
             app:destination="@id/diceRollerFragment" />
         <action
-            android:id="@+id/action_mainFragment_to_aboutMeFragment"
-            app:destination="@id/aboutMeFragment" />
+            android:id="@+id/action_mainFragment_to_layoutFragment"
+            app:destination="@id/sub_nav_layout" />
         <action
             android:id="@+id/action_mainFragment_to_titleFragment"
             app:destination="@id/titleFragment" />
@@ -54,15 +54,6 @@
         android:name="com.example.androidtestproject.diceroller.DiceRollerFragment"
         android:label="주사위 던지기"
         tools:layout="@layout/fragment_dice_roller" />
-    <fragment
-        android:id="@+id/aboutMeFragment"
-        android:name="com.example.androidtestproject.layout.ConstraintLayoutFragment"
-        android:label="레이아웃"
-        tools:layout="@layout/fragment_constraint_layout" >
-        <action
-            android:id="@+id/action_aboutMeFragment_to_toggleButtonGroup"
-            app:destination="@id/toggleButtonGroup" />
-    </fragment>
     <fragment
         android:id="@+id/settingFragment"
         android:name="com.example.androidtestproject.setting.SettingFragment"
@@ -155,9 +146,46 @@
         android:name="com.example.androidtestproject.viewpager.ViewPager2Activity"
         android:label="activity_view_pager2"
         tools:layout="@layout/activity_view_pager2" />
-    <fragment
-        android:id="@+id/toggleButtonGroup"
-        android:name="com.example.androidtestproject.layout.ToggleButtonGroup"
-        android:label="fragment_toggle_button_group"
-        tools:layout="@layout/fragment_toggle_button_group" />
+
+    <navigation
+        android:id="@+id/sub_nav_layout"
+        app:startDestination="@id/layoutFragment" >
+        <fragment
+            android:id="@+id/layoutFragment"
+            android:name="com.example.androidtestproject.layout.LayoutFragment"
+            android:label="레이아웃"
+            tools:layout="@layout/fragment_layout">
+            <action
+                android:id="@+id/action_aboutMeFragment_to_toggleButtonGroup"
+                app:destination="@id/toggleButtonGroup" />
+            <action
+                android:id="@+id/action_aboutMeFragment_to_seekBar"
+                app:destination="@id/seekBar" />
+            <action
+                android:id="@+id/action_layoutFragment_to_constraintLayoutFragment"
+                app:destination="@id/constraintLayoutFragment" />
+            <action
+                android:id="@+id/action_layoutFragment_to_snackBarFragment"
+                app:destination="@id/snackBarFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/constraintLayoutFragment"
+            android:name="com.example.androidtestproject.layout.ConstraintLayoutFragment"
+            android:label="fragment_constraint_layout"
+            tools:layout="@layout/fragment_constraint_layout" />
+        <fragment
+            android:id="@+id/toggleButtonGroup"
+            android:name="com.example.androidtestproject.layout.ToggleButtonGroup"
+            android:label="fragment_toggle_button_group"
+            tools:layout="@layout/fragment_toggle_button_group" />
+        <fragment
+            android:id="@+id/seekBar"
+            android:name="com.example.androidtestproject.layout.SeekBar"
+            android:label="SeekBar" />
+        <fragment
+            android:id="@+id/snackBarFragment"
+            android:name="com.example.androidtestproject.layout.SnackBarFragment"
+            android:label="fragment_snack_bar"
+            tools:layout="@layout/fragment_snack_bar" />
+    </navigation>
 </navigation>

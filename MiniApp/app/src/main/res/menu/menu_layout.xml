@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/sub_menu_constraint_layout"
+        android:title="Constraint Layout"/>
+
+    <item
+        android:id="@+id/sub_menu_seekbar"
+        android:title="SeekBar"/>
+
+    <item
+        android:id="@+id/sub_menu_toggle_btn"
+        android:title="Toggle Button"/>
+
+    <item
+        android:id="@+id/sub_menu_snack_bar"
+        android:title="Snack Bar"/>
+</menu>

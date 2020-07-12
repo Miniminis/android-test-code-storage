@@ -49,7 +49,7 @@ class MainFragment : Fragment() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.menu_layout -> {
-                this.findNavController().navigate(R.id.action_mainFragment_to_aboutMeFragment)
+                this.findNavController().navigate(R.id.action_mainFragment_to_layoutFragment)
                 (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
                 return@OnNavigationItemSelectedListener true
             }
