@@ -37,4 +37,8 @@
         android:id="@+id/menu_viewPager"
         android:title="ViewPager"/>
 
+    <item
+        android:id="@+id/menu_biometric"
+        android:title="Biometric"/>
+
 </menu>

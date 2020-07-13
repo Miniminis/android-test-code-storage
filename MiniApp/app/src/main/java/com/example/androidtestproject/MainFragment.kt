@@ -83,6 +83,11 @@ class MainFragment : Fragment() {
 //                (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.menu_biometric -> {
+                this.findNavController().navigate(R.id.action_mainFragment_to_biometricFragment2)
+                (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
+                return@OnNavigationItemSelectedListener true
+            }
             else -> { false }
         }
     }
