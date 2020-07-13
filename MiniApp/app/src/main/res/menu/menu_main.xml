@@ -41,4 +41,8 @@
         android:id="@+id/menu_biometric"
         android:title="Biometric"/>
 
+    <item
+        android:id="@+id/menu_context"
+        android:title="Context"/>
+
 </menu>

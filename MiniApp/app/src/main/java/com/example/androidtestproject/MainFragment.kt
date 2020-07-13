@@ -33,7 +33,6 @@ class MainFragment : Fragment() {
     }
 
     private val mOnNavigationItemSelectedListener = NavigationView.OnNavigationItemSelectedListener { item ->
-
         when(item.itemId) {
             R.id.menu_unittest -> {
                 //1. Navigation.findNavController(item).nagivate(R.id.action_mainFragment_to_unitTestFragment)
@@ -85,6 +84,11 @@ class MainFragment : Fragment() {
             }
             R.id.menu_biometric -> {
                 this.findNavController().navigate(R.id.action_mainFragment_to_biometricFragment2)
+                (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.menu_biometric -> {
+                this.findNavController().navigate(R.id.action_mainFragment_to_fragment1)
                 (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
                 return@OnNavigationItemSelectedListener true
             }

@@ -13,7 +13,7 @@
 
         <action
             android:id="@+id/action_mainFragment_to_unitTestFragment"
-            app:destination="@id/unitTestFragment" />
+            app:destination="@id/sub_nav_unittest" />
         <action
             android:id="@+id/action_mainFragment_to_diceRollerFragment"
             app:destination="@id/diceRollerFragment" />
@@ -38,20 +38,10 @@
         <action
             android:id="@+id/action_mainFragment_to_biometricFragment2"
             app:destination="@id/biometricFragment2" />
-    </fragment>
-    <fragment
-        android:id="@+id/unitTestFragment"
-        android:name="com.example.androidtestproject.unittest.UnitTestFragment"
-        android:label="유닛 테스트 01"
-        tools:layout="@layout/fragment_unit_test" >
         <action
-            android:id="@+id/action_unitTestFragment_to_unitTestFragment02"
-            app:destination="@id/unitTestFragment02" />
+            android:id="@+id/action_mainFragment_to_fragment1"
+            app:destination="@id/fragment1" />
     </fragment>
-    <fragment
-        android:id="@+id/unitTestFragment02"
-        android:name="com.example.androidtestproject.unittest.UnitTestFragment02"
-        android:label="유닛 테스트 02" />
     <fragment
         android:id="@+id/diceRollerFragment"
         android:name="com.example.androidtestproject.diceroller.DiceRollerFragment"
@@ -194,4 +184,25 @@
                 app:popUpToInclusive="true" />
         </fragment>
     </navigation>
+    <navigation
+        android:id="@+id/sub_nav_unittest"
+        app:startDestination="@id/unitTestFragment" >
+        <fragment
+            android:id="@+id/unitTestFragment02"
+            android:name="com.example.androidtestproject.unittest.UnitTestFragment02"
+            android:label="유닛 테스트 02" />
+        <fragment
+            android:id="@+id/unitTestFragment"
+            android:name="com.example.androidtestproject.unittest.UnitTestFragment"
+            android:label="유닛 테스트 01"
+            tools:layout="@layout/fragment_unit_test">
+            <action
+                android:id="@+id/action_unitTestFragment_to_unitTestFragment02"
+                app:destination="@id/unitTestFragment02" />
+        </fragment>
+    </navigation>
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.androidtestproject.context.Fragment1"
+        android:label="Fragment1" />
 </navigation>
