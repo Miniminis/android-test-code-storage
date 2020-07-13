@@ -49,4 +49,11 @@
         android:id="@+id/menu_coroutine"
         android:title="Coroutine"/>
 
+    <item
+        android:id="@+id/menu_dialog"
+        android:title="Dialog"/>
+
+    <item
+        android:id="@+id/menu_drm"
+        android:title="DRM"/>
 </menu>

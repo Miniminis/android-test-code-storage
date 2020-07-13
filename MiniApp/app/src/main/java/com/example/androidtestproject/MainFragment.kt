@@ -97,6 +97,16 @@ class MainFragment : Fragment() {
                 (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.menu_dialog -> {
+                this.findNavController().navigate(R.id.action_mainFragment_to_dialogMainFragment)
+                (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
+                return@OnNavigationItemSelectedListener true
+            }
+            R.id.menu_drm -> {
+                this.findNavController().navigate(R.id.action_mainFragment_to_DRMMainFragment)
+                (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
+                return@OnNavigationItemSelectedListener true
+            }
             else -> { false }
         }
     }

@@ -44,6 +44,12 @@
         <action
             android:id="@+id/action_mainFragment_to_coroutineFragment"
             app:destination="@id/coroutineFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_dialogMainFragment"
+            app:destination="@id/dialogMainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_DRMMainFragment"
+            app:destination="@id/DRMMainFragment" />
     </fragment>
     <fragment
         android:id="@+id/diceRollerFragment"
@@ -212,4 +218,14 @@
         android:id="@+id/coroutineFragment"
         android:name="com.example.androidtestproject.coroutine.CoroutineFragment"
         android:label="CoroutineFragment" />
+    <fragment
+        android:id="@+id/dialogMainFragment"
+        android:name="com.example.androidtestproject.dialogwithpager.DialogMainFragment"
+        android:label="fragment_dialog_main"
+        tools:layout="@layout/fragment_dialog_main" />
+    <fragment
+        android:id="@+id/DRMMainFragment"
+        android:name="com.example.androidtestproject.drm.DRMMainFragment"
+        android:label="fragment_d_r_m_main"
+        tools:layout="@layout/fragment_d_r_m_main" />
 </navigation>
