@@ -1,6 +1,5 @@
-# Android Documentation Practice
-
-https://developer.android.com/docs
+# android test code storage
+> https://developer.android.com/docs
 
 1. 앱 빌드 
 	1. 첫 앱 빌드 
