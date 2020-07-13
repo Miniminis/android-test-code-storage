@@ -41,6 +41,9 @@
         <action
             android:id="@+id/action_mainFragment_to_fragment1"
             app:destination="@id/fragment1" />
+        <action
+            android:id="@+id/action_mainFragment_to_coroutineFragment"
+            app:destination="@id/coroutineFragment" />
     </fragment>
     <fragment
         android:id="@+id/diceRollerFragment"
@@ -205,4 +208,8 @@
         android:id="@+id/fragment1"
         android:name="com.example.androidtestproject.context.Fragment1"
         android:label="Fragment1" />
+    <fragment
+        android:id="@+id/coroutineFragment"
+        android:name="com.example.androidtestproject.coroutine.CoroutineFragment"
+        android:label="CoroutineFragment" />
 </navigation>

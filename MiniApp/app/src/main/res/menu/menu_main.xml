@@ -45,4 +45,8 @@
         android:id="@+id/menu_context"
         android:title="Context"/>
 
+    <item
+        android:id="@+id/menu_coroutine"
+        android:title="Coroutine"/>
+
 </menu>

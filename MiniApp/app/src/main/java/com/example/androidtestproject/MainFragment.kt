@@ -92,6 +92,11 @@ class MainFragment : Fragment() {
                 (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.menu_coroutine -> {
+                this.findNavController().navigate(R.id.action_mainFragment_to_coroutineFragment)
+                (this.activity as MainActivity).bottom_navigation.visibility = View.GONE
+                return@OnNavigationItemSelectedListener true
+            }
             else -> { false }
         }
     }
