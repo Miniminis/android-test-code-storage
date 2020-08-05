@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.androidtestproject.MainFragment"
+        android:label="미니앱"
+        tools:layout="@layout/fragment_main" >
+
+        <action
+            android:id="@+id/action_mainFragment_to_unitTestFragment"
+            app:destination="@id/sub_nav_unittest" />
+        <action
+            android:id="@+id/action_mainFragment_to_diceRollerFragment"
+            app:destination="@id/diceRollerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_layoutFragment"
+            app:destination="@id/sub_nav_layout" />
+        <action
+            android:id="@+id/action_mainFragment_to_titleFragment"
+            app:destination="@id/sub_nav_trivia" />
+        <action
+            android:id="@+id/action_mainFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_shareFragment"
+            app:destination="@id/shareFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_lifeCycleActivity"
+            app:destination="@id/lifeCycleActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_securityFragment"
+            app:destination="@id/securityFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_biometricFragment2"
+            app:destination="@id/biometricFragment2" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragment1"
+            app:destination="@id/fragment1" />
+        <action
+            android:id="@+id/action_mainFragment_to_coroutineFragment"
+            app:destination="@id/coroutineFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_dialogMainFragment"
+            app:destination="@id/dialogMainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_DRMMainFragment"
+            app:destination="@id/DRMMainFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_imageCompression"
+            app:destination="@id/imageCompression" />
+        <action
+            android:id="@+id/action_mainFragment_to_newsMainActivity"
+            app:destination="@id/newsMainActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_networkMainActivity"
+            app:destination="@id/networkMainActivity" />
+        <action
+            android:id="@+id/action_mainFragment_to_animation"
+            app:destination="@id/animation" />
+    </fragment>
+    <fragment
+        android:id="@+id/diceRollerFragment"
+        android:name="com.example.androidtestproject.diceroller.DiceRollerFragment"
+        android:label="주사위 던지기"
+        tools:layout="@layout/fragment_dice_roller" />
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.example.androidtestproject.webview.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view" />
+    <fragment
+        android:id="@+id/shareFragment"
+        android:name="com.example.androidtestproject.share.ShareFragment"
+        android:label="fragment_share"
+        tools:layout="@layout/fragment_share" />
+    <activity
+        android:id="@+id/lifeCycleActivity"
+        android:name="com.example.androidtestproject.lifecycle.LifeCycleActivity"
+        android:label="LifeCycleActivity" />
+    <fragment
+        android:id="@+id/securityFragment"
+        android:name="com.example.androidtestproject.security.SecurityFragment"
+        android:label="fragment_security"
+        tools:layout="@layout/fragment_security" />
+
+    <navigation
+        android:id="@+id/sub_nav_layout"
+        app:startDestination="@id/layoutFragment" >
+        <fragment
+            android:id="@+id/layoutFragment"
+            android:name="com.example.androidtestproject.layout.LayoutFragment"
+            android:label="레이아웃"
+            tools:layout="@layout/fragment_layout">
+            <action
+                android:id="@+id/action_aboutMeFragment_to_toggleButtonGroup"
+                app:destination="@id/toggleButtonGroup" />
+            <action
+                android:id="@+id/action_aboutMeFragment_to_seekBar"
+                app:destination="@id/seekBar" />
+            <action
+                android:id="@+id/action_layoutFragment_to_constraintLayoutFragment"
+                app:destination="@id/constraintLayoutFragment" />
+            <action
+                android:id="@+id/action_layoutFragment_to_snackBarFragment"
+                app:destination="@id/snackBarFragment" />
+            <action
+                android:id="@+id/action_layoutFragment_to_coordinatorLayout"
+                app:destination="@id/coordinatorLayout" />
+        </fragment>
+        <fragment
+            android:id="@+id/constraintLayoutFragment"
+            android:name="com.example.androidtestproject.layout.ConstraintLayoutFragment"
+            android:label="fragment_constraint_layout"
+            tools:layout="@layout/fragment_constraint_layout" />
+        <fragment
+            android:id="@+id/toggleButtonGroup"
+            android:name="com.example.androidtestproject.layout.ToggleButtonGroup"
+            android:label="fragment_toggle_button_group"
+            tools:layout="@layout/fragment_toggle_button_group" />
+        <fragment
+            android:id="@+id/seekBar"
+            android:name="com.example.androidtestproject.layout.SeekBar"
+            android:label="SeekBar" />
+        <fragment
+            android:id="@+id/snackBarFragment"
+            android:name="com.example.androidtestproject.layout.SnackBarFragment"
+            android:label="fragment_snack_bar"
+            tools:layout="@layout/fragment_snack_bar" />
+        <fragment
+            android:id="@+id/coordinatorLayout"
+            android:name="com.example.androidtestproject.layout.CoordinatorLayout"
+            android:label="CoordinatorLayout" />
+    </navigation>
+    <fragment
+        android:id="@+id/biometricFragment2"
+        android:name="com.example.androidtestproject.biometric.BiometricFragment2"
+        android:label="BiometricFragment2" />
+    <navigation
+        android:id="@+id/sub_nav_trivia"
+        app:startDestination="@id/titleFragment" >
+        <fragment
+            android:id="@+id/settingFragment"
+            android:name="com.example.androidtestproject.setting.SettingFragment"
+            android:label="fragment_setting"
+            tools:layout="@layout/fragment_setting" />
+        <fragment
+            android:id="@+id/rulesFragment"
+            android:name="com.example.androidtestproject.navigation.RulesFragment"
+            android:label="fragment_trivia_rules"
+            tools:layout="@layout/fragment_trivia_rules" />
+        <fragment
+            android:id="@+id/aboutFragment"
+            android:name="com.example.androidtestproject.navigation.AboutFragment"
+            android:label="fragment_trivia_about"
+            tools:layout="@layout/fragment_trivia_about" />
+        <fragment
+            android:id="@+id/titleFragment"
+            android:name="com.example.androidtestproject.navigation.TitleFragment"
+            android:label="fragment_trivia_title"
+            tools:layout="@layout/fragment_trivia_title">
+            <action
+                android:id="@+id/action_titleFragment_to_gameFragment"
+                app:destination="@id/gameFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/gameWonFragment"
+            android:name="com.example.androidtestproject.navigation.GameWonFragment"
+            android:label="fragment_trivia_game_won"
+            tools:layout="@layout/fragment_trivia_game_won">
+            <action
+                android:id="@+id/action_gameWonFragment_to_gameFragment"
+                app:destination="@id/gameFragment"
+                app:popUpTo="@id/gameFragment"
+                app:popUpToInclusive="true" />
+            <argument
+                android:name="numQuestions"
+                app:argType="integer" />
+            <argument
+                android:name="numCorrects"
+                app:argType="integer" />
+        </fragment>
+        <fragment
+            android:id="@+id/gameOverFragment"
+            android:name="com.example.androidtestproject.navigation.GameOverFragment"
+            android:label="fragment_trivia_game_over"
+            tools:layout="@layout/fragment_trivia_game_over">
+            <action
+                android:id="@+id/action_gameOverFragment_to_titleFragment"
+                app:destination="@id/titleFragment"
+                app:popUpTo="@id/titleFragment"
+                app:popUpToInclusive="true" />
+        </fragment>
+        <fragment
+            android:id="@+id/gameFragment"
+            android:name="com.example.androidtestproject.navigation.GameFragment"
+            android:label="fragment_trivia_game"
+            tools:layout="@layout/fragment_trivia_game">
+            <action
+                android:id="@+id/action_gameFragment_to_gameWonFragment"
+                app:destination="@id/gameWonFragment"
+                app:popUpTo="@id/gameFragment"
+                app:popUpToInclusive="true" />
+            <action
+                android:id="@+id/action_gameFragment_to_gameOverFragment"
+                app:destination="@id/gameOverFragment"
+                app:popUpTo="@id/gameFragment"
+                app:popUpToInclusive="true" />
+        </fragment>
+    </navigation>
+    <navigation
+        android:id="@+id/sub_nav_unittest"
+        app:startDestination="@id/unitTestFragment" >
+        <fragment
+            android:id="@+id/unitTestFragment02"
+            android:name="com.example.androidtestproject.unittest.UnitTestFragment02"
+            android:label="유닛 테스트 02" />
+        <fragment
+            android:id="@+id/unitTestFragment"
+            android:name="com.example.androidtestproject.unittest.UnitTestFragment"
+            android:label="유닛 테스트 01"
+            tools:layout="@layout/fragment_unit_test">
+            <action
+                android:id="@+id/action_unitTestFragment_to_unitTestFragment02"
+                app:destination="@id/unitTestFragment02" />
+        </fragment>
+    </navigation>
+    <fragment
+        android:id="@+id/fragment1"
+        android:name="com.example.androidtestproject.context.Fragment1"
+        android:label="Fragment1" />
+    <fragment
+        android:id="@+id/coroutineFragment"
+        android:name="com.example.androidtestproject.coroutine.CoroutineFragment"
+        android:label="CoroutineFragment" />
+    <fragment
+        android:id="@+id/dialogMainFragment"
+        android:name="com.example.androidtestproject.dialogwithpager.DialogMainFragment"
+        android:label="fragment_dialog_main"
+        tools:layout="@layout/fragment_dialog_main" />
+    <fragment
+        android:id="@+id/DRMMainFragment"
+        android:name="com.example.androidtestproject.drm.DRMMainFragment"
+        android:label="fragment_d_r_m_main"
+        tools:layout="@layout/fragment_d_r_m_main" />
+    <fragment
+        android:id="@+id/imageCompression"
+        android:name="com.example.androidtestproject.imagecompression.ImageCompression"
+        android:label="ImageCompression"
+        tools:layout="@layout/fragment_image_compression"/>
+    <activity
+        android:id="@+id/newsMainActivity"
+        android:name="com.example.androidtestproject.newsapplication.NewsMainActivity"
+        android:label="NewsMainActivity"
+        tools:layout="@layout/activity_news_main"/>
+    <activity
+        android:id="@+id/networkMainActivity"
+        android:name="com.example.androidtestproject.network.NetworkMainActivity"
+        android:label="NetworkMainActivity"
+        tools:layout="@layout/activity_network_main"/>
+    <fragment
+        android:id="@+id/animation"
+        android:name="com.example.androidtestproject.animation.Animation"
+        android:label="fragment_animation"
+        tools:layout="@layout/fragment_animation" />
+</navigation>

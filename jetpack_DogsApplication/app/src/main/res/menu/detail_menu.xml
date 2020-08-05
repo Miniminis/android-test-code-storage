@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_send_sms"
+        android:title="Send SMS"
+        android:icon="@drawable/ic_send"
+        app:showAsAction="ifRoom"/>
+    <!--ifRoom : 팝업으로 메뉴가 뜨지 않고 그냥 고정된 아이콘으로 표시됨 -->
+
+    <item
+        android:id="@+id/action_share"
+        android:title="Share"
+        android:icon="@drawable/ic_share"
+        app:showAsAction="ifRoom"/>
+
+</menu>

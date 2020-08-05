@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="dog"
+            type="com.example.dogsapplication.view.model.DogBreed" />
+        <variable
+            name="clickListener"
+            type="com.example.dogsapplication.view.view.DogClickListener" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/item_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:onClick="@{clickListener::onDogClicked}">
+
+        <!-- click 시 dog id가 linear layout 내에 저장  -->
+        <TextView
+            android:id="@+id/dogId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:text="@{String.valueOf(dog.uui)}"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:padding="4dp"
+            android:src="@mipmap/ic_dog_launcher_round"
+            android:imageUrl="@{dog.imageUrl}"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="4dp">
+
+            <TextView
+                android:id="@+id/dogName"
+                style="@style/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{dog.dogBreed}" />
+
+            <TextView
+                android:id="@+id/dogLifespan"
+                style="@style/Content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{dog.lifeSpan}" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

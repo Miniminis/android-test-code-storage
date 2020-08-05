@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".layout.ToggleButtonGroup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+            android:id="@+id/group_choices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tbgCheckedButton="@+id/choice_a">
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/choice_a"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A" />
+            <!--            app:tbgButtonBackground="@drawable/round_rect_checked_bg"
+            -->
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/choice_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B"/>
+
+            <com.nex3z.togglebuttongroup.button.CircularToggle
+                android:id="@+id/choice_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C"/>
+
+        </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+        <nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup
+            android:id="@+id/time"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:flexWrap="wrap"> <!-- this attribute is from the underlying FlexboxLayout -->
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn1"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_btnCornerRadius="0dp"
+                app:toggle_borderColor="@color/green"
+                app:toggle_selectedBorderColor="@color/colorPrimaryDark"
+                app:toggle_borderWidth="2dp"
+                app:toggle_selectedBorderWidth="10dp"
+                app:toggle_text="5:30PM" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_btnCornerRadius="0dp"
+                app:toggle_borderColor="@color/green"
+                app:toggle_selectedBorderColor="@color/colorPrimaryDark"
+                app:toggle_borderWidth="2dp"
+                app:toggle_selectedBorderWidth="10dp"
+                app:toggle_text="7:30PM" />
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn3"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_btnCornerRadius="0dp"
+                app:toggle_borderColor="@color/green"
+                app:toggle_selectedBorderColor="@color/colorPrimaryDark"
+                app:toggle_borderWidth="2dp"
+                app:toggle_selectedBorderWidth="10dp"
+                app:toggle_text="8:00PM"/>
+
+            <nl.bryanderidder.themedtogglebuttongroup.ThemedButton
+                android:id="@+id/btn4"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                app:toggle_btnCornerRadius="0dp"
+                app:toggle_borderColor="@color/green"
+                app:toggle_selectedBorderColor="@color/colorPrimaryDark"
+                app:toggle_borderWidth="2dp"
+                app:toggle_selectedBorderWidth="10dp"
+                app:toggle_text="5:30PM" />
+
+        </nl.bryanderidder.themedtogglebuttongroup.ThemedToggleButtonGroup>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="196.3dp"
+    app:layout_constraintCircleRadius="2.5dp"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_margin="10dp"
+    android:background="@drawable/border"
+    >
+
+    <!--1. 제목, 금액-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.2"
+
+        >
+
+        <TextView
+            android:id="@+id/TextView_businCorpName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12.1sp"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="5.8sp"
+            tools:text="SK매칭"
+            android:background="@drawable/radius_bg01"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4.5dp"
+            android:layout_marginLeft="63dp"
+            android:layout_marginRight="4.5dp"
+            />
+        <!--radius 추가-->
+
+        <TextView
+            android:id="@+id/TextView_socialName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12.1sp"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="5.8sp"
+            tools:text="루트임팩팩트우우우우우우우우우우우우우웅"
+            android:background="@drawable/radius_bg01"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="4.5dp"
+            android:maxLength="6"
+            android:ellipsize="end"
+            />
+        <!--radius 추가-->
+
+        <TextView
+            android:id="@+id/TextView_loanMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="bottom"
+            android:letterSpacing="-0.03"
+            android:lineSpacingExtra="12.9sp"
+            android:paddingRight="8dp"
+            android:textColor="#009ade"
+            android:textSize="19.8sp"
+            tools:text="10,000,000 원"
+            />
+
+    </LinearLayout>
+
+    <!--중심내용부-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.4">
+
+        <ImageView
+            android:id="@+id/ImageView_isBookMark"
+            android:layout_width="34.8dp"
+            android:layout_height="33.5dp"
+            android:src="@drawable/icon_tooltip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="13dp"
+            android:layout_marginLeft="8dp"
+            />
+
+        <TextView
+            android:id="@+id/TextView_loanSubject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="-0.03"
+            android:lineSpacingExtra="7sp"
+            android:textColor="#3d3c4a"
+            android:textSize="17.9sp"
+            tools:text="(C-984)항공관제사의 꿈을 이루기 위해 관제 교육원 진학을 준비중..."
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="8dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+    </LinearLayout>
+
+    <!--하단부-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="0.4"
+        android:weightSum="1"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="0.3"
+            android:gravity="right"
+            android:paddingRight="8dp"
+            >
+
+            <TextView
+                android:id="@+id/TextView_loanCondition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12.1sp"
+                android:textColor="#6c717d"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="5.8sp"
+                android:gravity="end"
+                tools:text="* 대출조건: 24개월/ 원리금균등상환/20대 여성"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="5dp"
+                />
+
+            <TextView
+                android:id="@+id/TextView_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#ffffff"
+                android:letterSpacing="-0.03"
+                android:lineSpacingExtra="-7.8sp"
+                android:gravity="end"
+                tools:text="A"
+                android:background="@drawable/radius_bg03"
+                android:layout_gravity="center_vertical"
+                android:paddingHorizontal="5dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="12.5dp"
+                android:src="@drawable/radius_bg04"
+                android:paddingHorizontal="8dp"
+                android:layout_gravity="bottom"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextView_investProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#3d3c4a"
+            android:letterSpacing="-0.02"
+            tools:text="100 %"
+            android:layout_weight="0.1"
+            android:layout_gravity="right"
+            android:layout_marginRight="8dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:paddingHorizontal="8dp"
+            >
+
+            <ImageView
+                android:layout_width="12.5dp"
+                android:layout_height="12.5dp"
+                android:src="@drawable/reple_icon"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="3.3dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#717171"
+                android:letterSpacing="-0.02"
+                android:lineSpacingExtra="3.9sp"
+                android:text="99"
+                tools:text="99"
+                android:layout_gravity="center_vertical"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

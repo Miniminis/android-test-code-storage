@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".NetworkTestFinalFragment">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnChkConnection01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="네트워크 상태 체크 - ActiveNetworkInfo" />
+
+            <Button
+                android:id="@+id/btnChkConnection02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="네트워크 상태 체크 - NetworkCapabilities" />
+
+
+            <Button
+                android:id="@+id/btnChkConnection03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="네트워크 상태 체크 - NetworkCallback" />
+
+            <Button
+                android:id="@+id/btnChkConnection04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="네트워크 상태 체크 - custom listener" />
+
+        </LinearLayout>
+    </FrameLayout>
+</layout>
