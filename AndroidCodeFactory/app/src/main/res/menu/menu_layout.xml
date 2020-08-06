@@ -21,5 +21,8 @@
         android:id="@+id/sub_menu_coordinator_layout"
         android:title="Coordinator Layout"/>
 
+    <item
+        android:id="@+id/sub_menu_collapsing_layout"
+        android:title="Collapsing Layout"/>
 
 </menu>

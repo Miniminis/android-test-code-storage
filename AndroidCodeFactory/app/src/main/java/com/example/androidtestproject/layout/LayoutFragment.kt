@@ -44,6 +44,10 @@ class LayoutFragment : Fragment() {
                 this.findNavController().navigate(R.id.action_layoutFragment_to_coordinatorLayout)
                 return@OnNavigationItemSelectedListener true
             }
+            R.id.sub_menu_collapsing_layout -> {
+                this.findNavController().navigate(R.id.action_layoutFragment_to_collapsingLayout)
+                return@OnNavigationItemSelectedListener true
+            }
             else -> { false }
         }
     }

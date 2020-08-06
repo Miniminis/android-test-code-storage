@@ -111,6 +111,9 @@
             <action
                 android:id="@+id/action_layoutFragment_to_coordinatorLayout"
                 app:destination="@id/coordinatorLayout" />
+            <action
+                android:id="@+id/action_layoutFragment_to_collapsingLayout"
+                app:destination="@id/collapsingLayout" />
         </fragment>
         <fragment
             android:id="@+id/constraintLayoutFragment"
@@ -135,6 +138,11 @@
             android:id="@+id/coordinatorLayout"
             android:name="com.example.androidtestproject.layout.CoordinatorLayout"
             android:label="CoordinatorLayout" />
+        <fragment
+            android:id="@+id/collapsingLayout"
+            android:name="com.example.androidtestproject.layout.CollapsingLayout"
+            android:label="fragment_collapsing_layout"
+            tools:layout="@layout/fragment_collapsing_layout" />
     </navigation>
     <fragment
         android:id="@+id/biometricFragment2"
